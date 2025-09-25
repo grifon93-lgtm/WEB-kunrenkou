@@ -1,0 +1,451 @@
+@charset "UTF-8";
+body {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#body_container {
+	width: 1200px;
+//	margin: 0 auto;
+	background: #99f050;
+}
+
+/*-----header-----*/
+header {
+//	background: #fcc;
+	background: #fff;
+	margin-bottom: 80px;
+}
+
+
+header img {
+	width: 500px;
+	background: #fff;
+}
+
+nav {
+	padding-bottom: 4px;
+	width:100%;
+}
+
+nav ul {
+	width: 100%;
+	display: flex;
+//	justify-content: space-evenly;
+//	background: #ff00ff;
+}
+
+nav ul#menu li {
+	position: relative;
+	width: 200px;
+	line-height: 2.5;
+	font-size: 0.9rem;
+	text-align: center;
+	box-sizing: border-box;
+	border-left: solid 1px #666;
+}
+nav ul#menu li:first-child {
+	border-left: none;
+}
+nav ul#menu li a {
+	display: block;
+}
+nav ul#menu li a:hover {
+	display: block;
+	color: #fff;
+	background: #556b2f;
+}
+
+nav ul#menu li ul {
+	display: none;
+}
+nav ul#menu li:hover ul {
+	display: block;
+	position: absolute;
+	z-index: 30;
+}
+
+nav ul#menu li ul {
+	width: 100%;
+	display: none;
+	background: #fff;
+}
+nav ul#menu ul li {
+	margin: 0;
+	width: 100%;
+	font-size: 0.9rem;
+	border-left: none;
+	border-top: dotted 1px #666;
+}
+
+
+
+
+
+/*-----footer-----*/
+
+footer {
+	height: 350px;
+	background: #fff;
+//	background: #006400;
+//	color: #fff;
+	line-height: 1.5;
+}
+
+.footer_box {
+	padding: 40px 0 0;
+	height: 260px;
+	display: flex;
+	justify-content: space-between;
+	/*background: #ff00ff;*/
+}
+
+.cac_box {
+	margin: 0;
+	padding: 0;
+	width: 385px;
+//	background: #0ff;
+}
+
+.cac_box img {
+	width: 385px;
+	height: 56px;
+}
+
+.footer_link_box {
+	width: 704px;
+	padding-top: 48px;
+//	background: #0ff;
+}
+
+footer dl {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: repeat(6, auto);
+}
+
+/*content_area*/
+.section_box {
+	margin: 0 auto 80px;
+//	background: #ff0;
+}
+
+.section_box h2 {
+	margin-bottom: 20px;
+	max-width: 1050px;
+}
+
+
+.link_botan {
+	margin-top: 40px;
+	max-width: 200px;
+	padding: 5px 10px;
+	text-align: center;
+	border: solid 1px #000;
+}
+.link_botan a {
+	display: block;
+}
+.link_botan:hover {
+	color: #fff;
+	background: #556b2f;
+	border: solid 1px #556b2f;
+}
+.link_botan a:hover {
+	color: #fff;
+	display: block;
+}
+
+/* index */
+
+
+/*main_visual*/
+.main_visual {
+	width: 1200px;
+	height: 695px;
+	margin-bottom: 80px;
+//	background: #00f;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.main_visual h1 {
+	font-size: 8rem;
+	color: #fff;
+	background: #788cff;
+	z-index: 20;
+}
+
+.copy_up {
+	width: 80%;
+	position: absolute;
+	padding-left: 60px;
+}
+
+.copy_under {
+	width: 45%;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 60px;
+}
+
+.main_visual img {
+	width: 1200px;
+	position: absolute;
+	top: 38px;
+	z-index: 10;
+	box-sizing: border-box;
+}
+
+/*main_copy*/
+.main_copy {
+//	background: #0ff;
+	height: 390px;
+	margin-bottom: 24px;
+/*	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;*/
+	position: relative;
+}
+.main_copy img {
+	width: 440px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+.main_copy div {
+	width: 860px;
+	height: 350px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+.main_copy h2 {
+	font-size: 4rem;
+	line-height: 1.5;
+}
+.main_copy h2,
+.main_copy p {
+	padding-left: 140px;
+}
+
+/*top_news*/
+.top_news {
+	background: #fff;
+	margin-bottom: 80px;
+}
+.top_news h2 {
+	line-height:1.5;
+	font-size: 3rem;
+	text-align: center;
+}
+.top_news .link_botan {
+	margin: 0 0 10px auto;
+}
+.top_news div {
+	height: 250px;
+	padding: 10px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.top_news div img {
+	height: 240px;
+	margin: 0 10px;
+}
+/*section_box*/
+.section_box main,
+.section_box .about_student,
+.section_box .kengaku {
+	margin-bottom: 80px;
+//	background: #ffa500;
+}
+
+.section_box h2 {
+	font-size: 4rem;
+	line-height: 1.5;
+	color: #fff;
+	background: #788cff;
+}
+
+
+/*--main---*/
+
+main section {
+	height: 355px;
+	margin-bottom: 30px;
+//	display: flex;
+//	flex-wrap: wrap;
+//	justify-content: space-between;
+//	background: #fff;
+	position: relative;
+}
+
+.keiken img,
+.jukou img,
+.kyaria img {
+	width: 440px;
+	background: #00f;
+	position: absolute;
+	top: 0;
+	right: 0;
+//	z-index: 20;
+}
+.keiken div,
+.jukou div,
+.kyaria div {
+	height: 325px;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+//	z-index: 10;
+	background: #fff;
+}
+.keiken div div,
+.jukou div div,
+.kyaria div div {
+	padding-left: 32px;
+	height: 260px;
+	width: 655px;
+}
+
+.main h3 {
+	font-size: 2rem;
+	margin-bottom: 24px;
+}
+
+/*--student--*/
+.about_student {
+	width: 100%;
+}
+.about_student section {
+	margin-bottom: 32px;
+}
+.about_student h2 {
+	margin-left: auto;
+//	max-width: 670px;
+	text-align: right;
+}
+.about_student h3 {
+	font-size: 2rem;
+}
+.student_work {
+	height: 625px;
+//	display: flex;
+//	flex-wrap: wrap;
+//	justify-content: center;
+	position: relative;
+//	background: #fff;
+}
+.student_work img {
+	width: 550px;
+	position: absolute;
+	left: 0;
+	z-index: 20;
+} 
+.text-area {
+	width: 100%;
+	height: 545px;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 10;
+	background: #fff;
+}
+.text-area div {
+	margin-left: auto;
+	padding: 75px 32px 0 32px; 
+	width: 475px;
+//	background: #fcc;
+}
+.text-area div div {
+	margin: 0;
+	padding: 0;
+}
+.student_voice {
+	background: #fff;
+}
+.student_voice h3 {
+	text-align: center;
+	line-height: 2;
+}
+.student_voice .link_botan {
+		margin: 0 0 10px auto;
+}
+.gallery {
+	padding-bottom: 30px;
+//	background: #0f0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.gallery article {
+	width: 320px;
+	height: 320px;
+	margin: 0 24px;
+	background: #ff00ff
+}
+.samune {
+	width: 100%;
+	height: 200px;
+	background: #00f;
+}
+.article_title {
+	width: 100%;
+	height: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: #fff;
+}
+.article_title img {
+	width: 75px;
+	height: 75px;
+	background: #00f;
+}
+.article_title div {
+	line-height: 1.5;
+}
+
+/*kengaku_box*/	
+.kengaku {
+	margin-bottom: none;
+}
+.sisetsukengaku {
+	height: 630px;
+/*	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;*/
+	position: relative;
+//	background: #fff;
+}
+.kengaku-area {
+	width: 100%;
+	height: 390px;
+	position: absolute;
+	top: 60px;
+	z-index: 20;
+	background: #fff;
+}
+.kengaku-area div {
+	margin-right: auto;
+	padding: 32px 0 0 60px;
+}
+.sisetsukengaku h3 {
+	font-size: 2rem;
+}
+.kyousitsu {
+	width: 600px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 20;
+}
